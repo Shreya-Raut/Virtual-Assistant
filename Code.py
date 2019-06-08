@@ -17,7 +17,7 @@ def printAnswer():
     try:
         answer = wikipedia.summary(nm)
     except:
-        app_id = "XHX6TR-HV86KR8Y8G"
+        app_id = "################"   // Register to wolframalpha to get api key
         client = wolframalpha.Client(app_id)
         re = client.query(nm)
         answer = next(re.results).text
